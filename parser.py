@@ -1,11 +1,12 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from time import sleep
-
 import os
 import csv
 import traceback
-
+from pyfiglet import Figlet
+preview_text = Figlet(font='jazmine')
+print(preview_text.renderText('Serkilo')) 
 keywords = input("Введите ключевые слова: ").split()
 
 # в переменную SELLER вписать название продавца в кавычках, оно будет выделено зеленым!
